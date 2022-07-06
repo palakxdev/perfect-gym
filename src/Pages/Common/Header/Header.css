@@ -1,0 +1,13 @@
+.my-nav {
+    background-color: #040C28;
+}
+
+.nav-text {
+    color: white;
+    margin-right: 45px;
+}
+
+.nav-text:hover {
+    color: #4020A9;
+    transition: 0.3s;
+}

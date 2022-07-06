@@ -1,0 +1,49 @@
+.banner-bg {
+    background-image: url('../../../images/banner.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.pg-button {
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+
+.pg-button:hover {
+    background-color: #4020A9;
+    transition: ease-in 0.2s;
+}
+
+.h-line {
+    height: 25px;
+    width: 2px;
+    background-color: #4020A9;
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    .header-section {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .header-section img {
+        width: 60%;
+    }
+    .header-content {
+        padding: 10px 0px;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 576px) {
+    .header-section {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .header-section img {
+        width: 80%;
+    }
+    .header-content {
+        padding: 10px 0px;
+    }
+}
