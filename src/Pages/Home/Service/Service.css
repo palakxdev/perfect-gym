@@ -9,14 +9,14 @@
     margin: auto;
 }
 
-.pg-button {
-    background-color: transparent;
+.service-button {
+    background-color: #4020A9;
     border: 1px solid #4020A9;
-    color: #4020A9;
+    color: white;
 }
 
-.pg-button:hover {
-    color: #fff;
-    background-color: #4020A9;
+.service-button:hover {
+    color: #4020A9;
+    background-color: transparent;
     transition: ease-in 0.2s;
 }

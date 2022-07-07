@@ -10,8 +10,8 @@ const Banner = () => {
                 <div className='text-white ms-5 me-4 header-content'>
                     <h3 className='mb-4'>PERFECT GYM</h3>
                     <h1 className='mb-4'>LETS GET FIT GO PERFECT!!</ h1>
-                    <p className='mb-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis repellendus at fugit tenetur eveniet illo officiis, reiciendis accusantium quidem, quo vitae, explicabo impedit iure suscipit.</p>
-                    <button className='pg-button rounded-pill px-4 py-2 text-white'>Book Now</button>
+                    <p className='mb-4'>Working out daily can lead to injuries, fatigue, and burnout. All of these things can cause you to abandon your fitness program altogether. Start slowly, and gradually increase the duration and intensity of any new exercise routine. Be aware of your body.</p>
+                    <button className='banner-button rounded-pill px-4 py-2 text-white'>Book Now</button>
                 </div>
                 <img className='w-10' width={'100%'} src={man} alt="" />
             </div>

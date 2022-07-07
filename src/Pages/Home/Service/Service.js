@@ -12,7 +12,7 @@ const service = ({ service }) => {
                 <p className='text-center'>Price: ${price}</p>
                 <p>{description}</p>
                 <div className="text-center">
-                    <button className='pg-button rounded-pill px-4 py-2'>Book Now</button>
+                    <button className='service-button rounded-pill px-4 py-2'>Book Now</button>
                 </div>
             </div>
         </>

@@ -4,13 +4,13 @@
     background-size: cover;
 }
 
-.pg-button {
-    background-color: transparent;
-    border: 1px solid #fff;
+.banner-button {
+    background-color: #4020A9;
+    border: 1px solid white;
 }
 
-.pg-button:hover {
-    background-color: #4020A9;
+.banner-button:hover {
+    background-color: transparent;
     transition: ease-in 0.2s;
 }
 
