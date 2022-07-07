@@ -1,0 +1,28 @@
+.login-container {
+    background-color: #040C28;
+}
+
+.login-hr {
+    height: 2px;
+    width: 125px;
+    background-color: #4020A9;
+}
+
+.login-input {
+    width: 70%;
+}
+
+.login-control {
+    padding: 10px 25px;
+    border-radius: 6px;
+}
+
+.login-button {
+    background-color: #4020A9;
+    border: 1px solid white;
+}
+
+.login-button:hover {
+    background-color: transparent;
+    transition: ease-in 0.2s;
+}
