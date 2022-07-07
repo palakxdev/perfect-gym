@@ -1,0 +1,22 @@
+.service-container {
+    width: 300px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 15px;
+}
+
+.service-container img {
+    display: flex;
+    margin: auto;
+}
+
+.pg-button {
+    background-color: transparent;
+    border: 1px solid #4020A9;
+    color: #4020A9;
+}
+
+.pg-button:hover {
+    color: #fff;
+    background-color: #4020A9;
+    transition: ease-in 0.2s;
+}
