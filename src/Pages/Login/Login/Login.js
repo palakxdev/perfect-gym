@@ -9,17 +9,19 @@ const Login = () => {
                 <h2 className='mt-4 mb-4'>Please Login!!!</h2>
                 <div className="login-hr mb-4"></div>
                 <Form>
-                    <Form.Group className="mb-3 login-input" controlId="formBasicEmail">
+                    <Form.Group className="mb-3 login-input mx-auto" controlId="formBasicEmail">
                         <Form.Control className='login-control' type="email" placeholder="Enter email" />
                     </Form.Group>
 
-                    <Form.Group className="mb-3 login-input" controlId="formBasicPassword">
+                    <Form.Group className="mb-3 login-input mx-auto" controlId="formBasicPassword">
                         <Form.Control className='login-control' type="password" placeholder="Password" />
                     </Form.Group>
 
-                    <Button className='mb-2 px-4 login-button' variant="primary" type="submit">
-                        Login
-                    </Button>
+                    <div className='text-center'>
+                        <Button className='mb-2 px-4  login-button' variant="primary" type="submit">
+                            Login
+                        </Button>
+                    </div>
                 </Form>
             </div>
         </>
