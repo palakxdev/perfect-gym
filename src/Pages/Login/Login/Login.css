@@ -1,5 +1,7 @@
 .login-container {
     background-color: #040C28;
+    width: 900px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
 .login-hr {
@@ -9,7 +11,7 @@
 }
 
 .login-input {
-    width: 70%;
+    width: 60%;
 }
 
 .login-control {

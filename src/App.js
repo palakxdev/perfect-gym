@@ -5,6 +5,7 @@ import Home from './Pages/Home/Home/Home';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import About from './Pages/About/About';
 import Login from './Pages/Login/Login/Login';
+import Register from './Pages/Login/Register/Register';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path='/home' element={<Home></Home>}>Home</Route>
         <Route path='/about' element={<About></About>}>About us</Route>
         <Route path='/login' element={<Login></Login>}>Login</Route>
+        <Route path='/register' element={<Register></Register>}>Register</Route>
       </Routes>
     </>
   );
