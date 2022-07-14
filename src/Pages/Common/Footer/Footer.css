@@ -1,0 +1,24 @@
+footer {
+    background-color: #040C28;
+}
+
+h3 {
+    color: #4020A9;
+}
+
+.icon-width {
+    width: 20px;
+    height: 20px;
+}
+
+.footer-bottom {
+    margin: 0%;
+    background-color: #000612;
+}
+
+@media screen and (min-width: 0px) and (max-width: 576px) {
+    .sm-center {
+        text-align: center;
+        padding: 0px;
+    }
+}

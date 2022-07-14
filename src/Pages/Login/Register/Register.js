@@ -8,7 +8,7 @@ const Register = () => {
                 <h2 className='mt-4 mb-4'>REGISTER NOW !!!</h2>
                 <div className="login-hr mb-4"></div>
                 <Form>
-                    <Form.Group className="mb-3 login-input mx-auto" controlId="formBasicEmail">
+                    <Form.Group className="mb-3 login-input mx-auto" controlId="yourName">
                         <Form.Control className='login-control' type="text" placeholder="Your name" />
                     </Form.Group>
 
