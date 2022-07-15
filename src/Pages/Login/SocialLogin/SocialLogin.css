@@ -1,0 +1,17 @@
+.social-line {
+    height: 2px;
+    width: 230px;
+    background-color: #4020A9;
+}
+
+.social-button {
+    border: 1px solid #4020A9;
+    background-color: transparent;
+    
+}
+
+.social-button:hover {
+    background-color: #4020A9;
+    border: 1px solid white;
+    transition: ease-in 0.2s;
+}

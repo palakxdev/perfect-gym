@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button, Form } from 'react-bootstrap';
+import SocialLogin from '../SocialLogin/SocialLogin';
 
 const Register = () => {
     return (
@@ -26,6 +27,7 @@ const Register = () => {
                         </Button>
                     </div>
                 </Form>
+                <SocialLogin></SocialLogin>
             </div>
         </>
     );

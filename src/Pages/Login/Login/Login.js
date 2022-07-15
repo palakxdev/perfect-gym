@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button, Form } from 'react-bootstrap';
+import SocialLogin from '../SocialLogin/SocialLogin';
 import './Login.css';
 
 const Login = () => {
@@ -10,11 +11,11 @@ const Login = () => {
                 <div className="login-hr mb-4"></div>
                 <Form>
                     <Form.Group className="mb-3 login-input mx-auto" controlId="formBasicEmail">
-                        <Form.Control className='login-control' type="email" placeholder="Enter email" />
+                        <Form.Control className='login-control' type="email" placeholder="Enter email" required />
                     </Form.Group>
 
                     <Form.Group className="mb-3 login-input mx-auto" controlId="formBasicPassword">
-                        <Form.Control className='login-control' type="password" placeholder="Password" />
+                        <Form.Control className='login-control' type="password" placeholder="Password" required />
                     </Form.Group>
 
                     <div className='text-center'>
@@ -22,7 +23,12 @@ const Login = () => {
                             Login
                         </Button>
                     </div>
+                    <div className='text-white mt-4'>
+                        <p>NEW TO PERFECT GYM? <span className='text-primary'>PLEASE REGISTER.</span></p>
+                        <p>FORGET YOUR PASSWORD? <span className='text-primary'>RESET PASSWORD.</span></p>
+                    </div>
                 </Form>
+                <SocialLogin></SocialLogin>
             </div>
         </>
     );
