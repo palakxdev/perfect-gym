@@ -10,7 +10,7 @@ const Footer = () => {
                 <div className='d-flex justify-content-evenly flex-wrap sm-center p-5'>
                     <div className='p-2'>
                         <h3>CONTACT US</h3>
-                        <p className='text-white'>Email: perfectgymhelp@gmail.com <br />Cell: +1-212-456-7890</p>
+                        <p className='footer-text-color'>Email: perfectgymhelp@gmail.com <br />Cell: +1-212-456-7890</p>
                     </div>
                     <div className='p-2'>
                         <h3>FOLLOW US ON</h3>

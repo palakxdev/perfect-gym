@@ -1,3 +1,7 @@
+.service-container p {
+    color: #777777;
+}
+
 .service-container {
     width: 300px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;

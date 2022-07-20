@@ -1,9 +1,16 @@
 import React from 'react';
 import { Button, Form } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 import SocialLogin from '../SocialLogin/SocialLogin';
 import './Login.css';
 
 const Login = () => {
+    const navigate = useNavigate();
+
+    const navigateToRegister = () => {
+        navigate('/register')
+    }
+
     return (
         <>
             <div className='login-container p-5 mt-5 mx-auto rounded-4 mb-5'>
@@ -24,7 +31,7 @@ const Login = () => {
                         </Button>
                     </div>
                     <div className='text-white mt-4'>
-                        <p>NEW TO PERFECT GYM? <span className='text-primary'>PLEASE REGISTER.</span></p>
+                        <p>NEW TO PERFECT GYM? <span className='text-primary register-toggler' onClick={navigateToRegister}>PLEASE REGISTER.</span></p>
                         <p>FORGET YOUR PASSWORD? <span className='text-primary'>RESET PASSWORD.</span></p>
                     </div>
                 </Form>

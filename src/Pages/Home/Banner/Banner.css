@@ -1,3 +1,7 @@
+.banner-bg p {
+    color: #777777;
+}
+
 .banner-bg {
     background-image: url('../../../images/banner.png');
     background-position: center;
