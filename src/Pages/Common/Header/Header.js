@@ -3,8 +3,17 @@ import { Navbar, Container, Nav } from 'react-bootstrap';
 import './Header.css';
 import logo from '../../../images/logo.png'
 import { Link } from 'react-router-dom';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import auth from '../../../firebase.init';
+import { signOut } from 'firebase/auth';
 
 const Header = () => {
+    const [user] = useAuthState(auth);
+
+    const handleSignOut = () => {
+        signOut(auth)
+    }
+
     return (
         <>
             <Navbar className='my-nav' collapseOnSelect expand="lg" variant="dark">
@@ -15,7 +24,12 @@ const Header = () => {
                         <Nav className="ms-auto">
                             <Nav.Link href="home#services"><span className="nav-text">Our services</span></Nav.Link>
                             <Nav.Link as={Link} to="/about"><span className="nav-text">About us</span></Nav.Link>
-                            <Nav.Link as={Link} to="/login"><span className="nav-text">Login</span></Nav.Link>
+                            {
+                                user?
+                                <button onClick={handleSignOut} className='banner-button rounded-pill px-3 py-1 text-white'>Sign out</button>
+                                :
+                                <Nav.Link as={Link} to="/login"><span className="nav-text">Sign in</span></Nav.Link>
+                            }
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

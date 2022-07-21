@@ -18,6 +18,7 @@ const SocialLogin = () => {
     }
 
     if (googleUser || facebookUser) {
+        // console.log(googleUser, facebookUser);
         return (
             <div className='text-center p-4 successful-regesterer m-4'>
                 <h2 className='text-success'>Congratulation!!!</h2>
@@ -38,7 +39,7 @@ const SocialLogin = () => {
 
     if (GoogleError || facebookError) {
         errorelement = <div>
-            <p className='text-danger text-center'>Error. {GoogleError?.message}</p>
+            <p className='text-danger text-center'>sign-in error! {GoogleError?.message} {facebookError?.message}</p>
         </div>
     }
 
