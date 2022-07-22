@@ -9,6 +9,8 @@ import Register from './Pages/Login/Register/Register';
 import Footer from './Pages/Common/Footer/Footer';
 import NotFound from './Pages/Common/NotFound/NotFound';
 import Blogs from './Pages/Blogs/Blogs';
+import RequiredAuth from './Pages/Login/RequiredAuth/RequiredAuth';
+import BookNow from './Pages/BookNow/BookNow';
 
 function App() {
   return (
@@ -21,6 +23,11 @@ function App() {
         <Route path='/login' element={<Login></Login>}>Login</Route>
         <Route path='/register' element={<Register></Register>}>Register</Route>
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
+        <Route path='/booknow' element={
+          <RequiredAuth>
+            <BookNow></BookNow>
+          </RequiredAuth>
+        }></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>

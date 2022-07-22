@@ -1,6 +1,7 @@
 import React from 'react';
 import './Banner.css';
 import man from '../../../images/banner-man.png'
+import { Link } from 'react-router-dom';
 
 const Banner = () => {
     return (
@@ -11,7 +12,7 @@ const Banner = () => {
                     <h3 className='mb-4'>PERFECT GYM</h3>
                     <h1 className='mb-4'>LETS GET FIT GO PERFECT!!</ h1>
                     <p className='mb-4 lh-base'>Working out daily can lead to injuries, fatigue, and burnout. All of these things can cause you to abandon your fitness program altogether. Start slowly, and gradually increase the duration and intensity of any new exercise routine. Be aware of your body.</p>
-                    <button className='banner-button rounded-pill px-4 py-2 text-white'>Book Now</button>
+                    <Link to='/register'><button className='banner-button rounded-pill px-4 py-2 text-white'>Join Now</button></Link>
                 </div>
                 <img className='w-10' width={'100%'} src={man} alt="" />
             </div>

@@ -49,7 +49,7 @@ const Register = () => {
         return (
             <div className='text-center m-5 p-5'>
                 <Loading></Loading>
-                <p>Loading...</p>
+                <p className='text-primary'>Loading...</p>
             </div>
         );
     }
