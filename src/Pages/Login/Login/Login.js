@@ -1,12 +1,14 @@
 import React from 'react';
 import { useRef } from 'react';
 import { Button, Form } from 'react-bootstrap';
-import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
 import Loading from '../../Common/Loading/Loading';
 import SocialLogin from '../SocialLogin/SocialLogin';
 import './Login.css';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Login = () => {
     const emailRef = useRef();
@@ -20,6 +22,19 @@ const Login = () => {
         navigate('/register')
     }
 
+    const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
+
+    const resetPassword = async () => {
+        const email = emailRef.current.value;
+        if (email) {
+            await sendPasswordResetEmail(email);
+            toast('Password reset email sent, please check you inbox.')
+        }
+        else {
+            toast('Please enter a valid email address')
+        }
+    }
+
     const [
         signInWithEmailAndPassword,
         user,
@@ -29,10 +44,11 @@ const Login = () => {
     let errorelement;
 
     if (user) {
+        console.log(user);
         navigate(from, { replace: true });
     }
 
-    if (loading) {
+    if (loading || sending) {
         return (
             <div className='text-center m-5 p-5'>
                 <Loading></Loading>
@@ -67,18 +83,22 @@ const Login = () => {
                     <Form.Group className="mb-3 login-input mx-auto" controlId="formBasicPassword">
                         <Form.Control ref={passwordRef} className='login-control' type="password" placeholder="Password" required />
                     </Form.Group>
+
                     {errorelement}
+
                     <div className='text-center'>
                         <Button className='mb-2 px-4  login-button' variant="primary" type="submit">
                             Login
                         </Button>
                     </div>
+
                     <div className='text-white mt-4'>
                         <p>NEW TO PERFECT GYM? <span className='text-primary register-toggler' onClick={navigateToRegister}>PLEASE REGISTER.</span></p>
-                        <p>FORGET YOUR PASSWORD? <span className='text-primary'>RESET PASSWORD.</span></p>
+                        <p>FORGET YOUR PASSWORD? <span className='text-primary reset-password' onClick={resetPassword}>RESET PASSWORD.</span></p>
                     </div>
                 </Form>
                 <SocialLogin></SocialLogin>
+                <ToastContainer />
             </div>
         </>
     );

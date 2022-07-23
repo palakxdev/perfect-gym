@@ -11,7 +11,7 @@ const Home = () => {
             <Services></Services>
             <About></About>
             <div>
-                <h2 className='text-center mt-5'>JOIN WITH US</h2>
+                <h2 className='text-center mt-5'>JOIN WITH ME</h2>
                 <div className="y-line mx-auto mb-5"></div>
             </div>
             <Register></Register>

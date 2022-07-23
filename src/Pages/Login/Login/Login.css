@@ -33,6 +33,10 @@
     cursor: pointer;
 }
 
+.reset-password:hover {
+    cursor: pointer;
+}
+
 @media screen and (min-width: 576px) and (max-width: 820px) {
     .login-container {
         width: 550px !important;

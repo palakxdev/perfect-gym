@@ -4,10 +4,14 @@
 
 .nav-text {
     color: white;
-    margin-right: 45px;
+    margin-right: 35px;
 }
 
 .nav-text:hover {
     color: #4020A9;
     transition: 0.3s;
+}
+
+.nav-text-active {
+    color: #4020A9;
 }

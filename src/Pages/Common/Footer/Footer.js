@@ -9,11 +9,11 @@ const Footer = () => {
             <footer className='mt-4'>
                 <div className='d-flex justify-content-evenly flex-wrap sm-center p-5'>
                     <div className='p-2'>
-                        <h3>CONTACT US</h3>
+                        <h3>CONTACT ME</h3>
                         <p className='footer-text-color'>Email: perfectgymhelp@gmail.com <br />Cell: +1-212-456-7890</p>
                     </div>
                     <div className='p-2'>
-                        <h3>FOLLOW US ON</h3>
+                        <h3>FOLLOW ME ON</h3>
                         <div className='d-flex align-items-center justify-content-evenly'>
                             <a href="https://facebook.com" target='_blank' rel='noreferrer'><FaFacebook className='icon-width' /></a>
                             <a href="https://twitter.com" target='_blank' rel='noreferrer'><FaTwitter className='icon-width' /></a>
