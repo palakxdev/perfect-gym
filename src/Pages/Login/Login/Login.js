@@ -44,7 +44,6 @@ const Login = () => {
     let errorelement;
 
     if (user) {
-        console.log(user);
         navigate(from, { replace: true });
     }
 
@@ -77,11 +76,11 @@ const Login = () => {
                 <div className="login-hr mb-4"></div>
                 <Form onSubmit={handleLogin}>
                     <Form.Group className="mb-3 login-input mx-auto" controlId="formBasicEmail">
-                        <Form.Control ref={emailRef} className='login-control' type="email" placeholder="Enter email" required />
+                        <Form.Control ref={emailRef} className='login-control' type="email" placeholder="Enter Your Email" required />
                     </Form.Group>
 
                     <Form.Group className="mb-3 login-input mx-auto" controlId="formBasicPassword">
-                        <Form.Control ref={passwordRef} className='login-control' type="password" placeholder="Password" required />
+                        <Form.Control ref={passwordRef} className='login-control' type="password" placeholder="Enter Your Password" required />
                     </Form.Group>
 
                     {errorelement}

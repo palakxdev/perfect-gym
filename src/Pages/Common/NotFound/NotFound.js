@@ -6,13 +6,13 @@ import './NotFound.css'
 const NotFound = () => {
     const navigate = useNavigate();
     const navigateToHome = () => {
-        navigate('/register')
+        navigate('/home')
     }
 
     return (
         <div>
             <img className='w-100' src={notfound} alt="" />
-            <p className='notfound-text text-center p-4' onClick={navigateToHome}>--Go To Home--</p>
+            <p className='notfound-text text-center p-4' onClick={navigateToHome}>-- Go To Home --</p>
         </div>
     );
 };

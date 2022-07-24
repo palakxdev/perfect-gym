@@ -49,7 +49,7 @@ const Register = () => {
             <div className='text-center p-4 successful-regesterer m-4'>
                 <h2 className='text-success'>Congratulation {name}!!!</h2>
                 <h2 className='mb-5 text-success'>You're successfuly registered.</h2>
-                <Link to="/home" className='text-decoration-none' onClick={navigateToLogin}>----Go to home page----</Link>
+                <Link to="/home" className='text-decoration-none' onClick={navigateToLogin}>-- Go to home --</Link>
             </div>
         );
     }
@@ -73,7 +73,7 @@ const Register = () => {
         event.preventDefault();
         await createUserWithEmailAndPassword(email, password);
         await updateProfile({ displayName: name });
-        console.log('Updated profile');
+        // console.log('Updated profile');
     }
 
     return (
@@ -83,15 +83,15 @@ const Register = () => {
                 <div className="login-hr mb-4"></div>
                 <Form onSubmit={handleFormSubmit}>
                     <Form.Group className="mb-3 login-input mx-auto" controlId="yourName">
-                        <Form.Control className='login-control' onBlur={handleNameBlur} type="text" placeholder="Your name" />
+                        <Form.Control className='login-control' onBlur={handleNameBlur} type="text" placeholder="Enter Your Name" />
                     </Form.Group>
 
                     <Form.Group className="mb-3 login-input mx-auto" controlId="formBasicEmail">
-                        <Form.Control className='login-control' onBlur={handleEmailBlur} type="email" name='email' placeholder="Your email" required />
+                        <Form.Control className='login-control' onBlur={handleEmailBlur} type="email" name='email' placeholder="Enter Your Email" required />
                     </Form.Group>
 
                     <Form.Group className="mb-3 login-input mx-auto" controlId="formBasicPassword">
-                        <Form.Control className='login-control' onBlur={handlePasswordBlur} type="password" name='password' placeholder="Your Password" required />
+                        <Form.Control className='login-control' onBlur={handlePasswordBlur} type="password" name='password' placeholder="Enter Your Password" required />
                     </Form.Group>
 
                     {errorelement}
