@@ -21,8 +21,8 @@ const SocialLogin = () => {
         // console.log(googleUser, facebookUser);
         return (
             <div className='text-center p-4 successful-regesterer m-4'>
-                <h2 className='text-success'>Congratulation!!!</h2>
-                <h2 className='mb-5 text-success'>You're successfuly registered.</h2>
+                <h3 className='text-success'>Congratulation!!!</h3>
+                <h3 className='mb-5 text-success'>You're successfuly registered.</h3>
                 <Link to="/home" className='text-decoration-none' onClick={navigateToHome}>-- Go to home --</Link>
             </div>
         );
