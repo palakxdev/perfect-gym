@@ -1,10 +1,10 @@
 .accord-container {
-    background-color: #040C28;
+    background-color: #040c28;
     border-radius: 10px;
 }
 
 .accord-item {
-    width: 90%;
+    width: 75%;
     color: #777777;
     box-shadow: rgb(79, 83, 87) 0px 20px 30px -10px;
 }
