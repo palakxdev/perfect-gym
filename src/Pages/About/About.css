@@ -3,7 +3,7 @@
 }
 
 .about-container {
-    background-color: #040C28;
+    background-color: #040c28;
 }
 
 .about-container img {
@@ -13,22 +13,14 @@
 .about-hr {
     height: 2px;
     width: 125px;
-    background-color: #4020A9;
+    background-color: #4020a9;
 }
 
-@media screen and (min-width: 576px) and (max-width: 820px) {
-    .about-container img {
-        width: 400px;
-        margin-bottom: 25px;
-    }
+@media screen and (min-width: 576px) and (max-width: 920px) {
 }
 
 @media screen and (min-width: 0px) and (max-width: 576px) {
     .about-container {
         flex-wrap: wrap;
-    }
-    .about-container img {
-        width: 320px;
-        margin-bottom: 25px;
     }
 }

@@ -1,10 +1,34 @@
 h2,
 h4 {
-    color: #4020A9;
+    color: #4020a9;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
 }
 
 .y-line {
     height: 2px;
     width: 130px;
-    background-color: #4020A9;
+    background-color: #4020a9;
+}
+
+/* ------------RESPONSIVE FOR MOBILE DEVICES----------- */
+@media screen and (min-width: 0px) and (max-width: 576px) {
+    .services {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+    }
+}
+
+/* ------------RESPONSIVE FOR TABLET DEVICES----------- */
+@media screen and (min-width: 576px) and (max-width: 980px) {
+    .services {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+    }
 }

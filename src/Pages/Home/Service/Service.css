@@ -14,13 +14,27 @@
 }
 
 .service-button {
-    background-color: #4020A9;
-    border: 1px solid #4020A9;
+    background-color: #4020a9;
+    border: 1px solid #4020a9;
     color: white;
 }
 
 .service-button:hover {
-    color: #4020A9;
+    color: #4020a9;
     background-color: transparent;
     transition: ease-in 0.2s;
+}
+
+/* ------------RESPONSIVE FOR MOBILE DEVICES----------- */
+@media screen and (min-width: 0px) and (max-width: 576px) {
+    .service-container {
+        width: 240px;
+    }
+}
+
+/* ------------RESPONSIVE FOR TABLET DEVICES----------- */
+@media screen and (min-width: 576px) and (max-width: 980px) {
+    .service-container {
+        width: 250px;
+    }
 }
