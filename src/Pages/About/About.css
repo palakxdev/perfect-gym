@@ -15,12 +15,3 @@
     width: 125px;
     background-color: #4020a9;
 }
-
-@media screen and (min-width: 576px) and (max-width: 920px) {
-}
-
-@media screen and (min-width: 0px) and (max-width: 576px) {
-    .about-container {
-        flex-wrap: wrap;
-    }
-}
