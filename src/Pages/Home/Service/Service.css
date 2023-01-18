@@ -3,7 +3,7 @@
 }
 
 .service-container {
-    width: 300px;
+    /* width: 400px; */
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border-radius: 15px;
 }
@@ -23,18 +23,4 @@
     color: #4020a9;
     background-color: transparent;
     transition: ease-in 0.2s;
-}
-
-/* ------------RESPONSIVE FOR MOBILE DEVICES----------- */
-@media screen and (min-width: 0px) and (max-width: 576px) {
-    .service-container {
-        width: 240px;
-    }
-}
-
-/* ------------RESPONSIVE FOR TABLET DEVICES----------- */
-@media screen and (min-width: 576px) and (max-width: 980px) {
-    .service-container {
-        width: 250px;
-    }
 }
