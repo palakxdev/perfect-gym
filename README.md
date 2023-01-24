@@ -6,7 +6,7 @@
 ![Logo](https://i.ibb.co/G3cpjC0/PERFECT-GYM.png)
 
 ## Short Description:
-This is a gym related website project for a single person. A responsive, user-friendly website built using ReactJS. Here user can register by using their email and password. There are also google sign in and facebook sign in method available for users. Although here I used bootstrap css framework but I applied media query by using vanila css to make the website better user experince for all devices.
+This is a gym-related website project for a single person. A responsive, user-friendly website built using ReactJS Here, users can register by using their email and password. There are also Google Sign-In and Facebook Sign-In methods available for users. Although I used the Bootstrap CSS framework, I used Vanilla CSS to apply media queries to make the website more accessible to users on all devices. 
 
 ## To see the live website: [Click Here](https://perfect-gym-dc72e.web.app/)
 
@@ -29,11 +29,10 @@ This is a gym related website project for a single person. A responsive, user-fr
 - [ReactJS](https://reactjs.org/) - JavaScript library for building user interfaces
 - [Bootstrap](https://getbootstrap.com/) - CSS framework for responsive design
 - [React bootstrap](https://react-bootstrap.github.io/) - CSS framework for responsive design
-- [Google firebase](https://firebase.google.com/docs/auth/web/start) - Authentication system for user sign in and register
-- [React firebase hooks](https://github.com/CSFrequency/react-firebase-hooks) - Authentication system for user sign in and register
-- [React icons](https://react-icons.github.io/react-icons/) - To utilizes ES6 imports that allows us to include only the icons that our project is using.
+- [Google firebase](https://firebase.google.com/docs/auth/web/start) - Authentication system for users to sign in and register
+- [React firebase hooks](https://github.com/CSFrequency/react-firebase-hooks) - Authentication system for users to sign in and register
+- [React icons](https://react-icons.github.io/react-icons/) - To utilize ES6 imports that allow us to include only the icons that our project is using
 - [React toastify](https://fkhadra.github.io/react-toastify/introduction) - To show the user different messages and increase user experience
-
 
 
 ## Tech Stack
