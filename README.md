@@ -1,18 +1,95 @@
-# Project Name: PERFECT GYM
 
-### To see the live website: [Click Here](https://perfect-gym-dc72e.web.app/)
+# 🚀 Author:
 
-## DESCRIPTION OF THE PROJECT:
-- Anybody can register on this app.
-- Any registered user can login by using their email and password.
-- Includes social login system.
-- You can also sign in using a Gmail or Facebook account.
-- If you forget your password you can reset your password.
-- Included email verification system.
+# [Hi, I'm Palak! 👋](https://github.com/Palak-SweetCoder)
 
-### TECHNOLOGY APPLIED
-- React JavaScript library
-- React Bootstrap
-- Firebase
-- React firebase hooks
-- Toast
+![Logo](https://i.ibb.co/G3cpjC0/PERFECT-GYM.png)
+
+## Short Description:
+This is a gym related website project for a single person. A responsive, user-friendly website built using ReactJS. Here user can register by using their email and password. There are also google sign in and facebook sign in method available for users. Although here I used bootstrap css framework but I applied media query by using vanila css to make the website better user experince for all devices.
+
+## To see the live website: [Click Here](https://perfect-gym-dc72e.web.app/)
+
+## Features
+
+👉 Dynamic content rendered using React components
+
+👉 Protected route with user authentication
+
+👉 Responsive design for optimal user experience on all devices
+
+👉 User authentication and authorization
+
+👉 Clean, organized codebase using modern JavaScript and React best practices
+
+
+
+## Built With
+
+- [ReactJS](https://reactjs.org/) - JavaScript library for building user interfaces
+- [Bootstrap](https://getbootstrap.com/) - CSS framework for responsive design
+- [React bootstrap](https://react-bootstrap.github.io/) - CSS framework for responsive design
+- [Google firebase](https://firebase.google.com/docs/auth/web/start) - Authentication system for user sign in and register
+- [React firebase hooks](https://github.com/CSFrequency/react-firebase-hooks) - Authentication system for user sign in and register
+- [React icons](https://react-icons.github.io/react-icons/) - To utilizes ES6 imports that allows us to include only the icons that our project is using.
+- [React toastify](https://fkhadra.github.io/react-toastify/introduction) - To show the user different messages and increase user experience
+
+
+
+## Tech Stack
+
+**Client:** HTML5, CSS3, JavaScript, React, Bootstrap, React bootstrap
+
+**Server:** Not applied
+
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://link-to-project
+```
+
+Go to the project directory
+
+```bash
+  cd my-project
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the server
+
+```bash
+  npm run start
+```
+
+
+## Environment Variables
+
+To run this project, you will need to add the following environment variables to the .env.local file
+
+`apiKey`
+
+`authDomain`
+
+`projectId`
+
+`storageBucket`
+
+`messagingSenderId`
+
+`appId`
+
+## Screenshots
+
+![App Screenshot](https://i.ibb.co/jVVYFrg/newer.png)
+
+
+## Feedback
+
+If you have any feedback, please reach out to me at pspalak6@gmail.com

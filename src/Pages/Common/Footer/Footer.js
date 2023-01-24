@@ -77,8 +77,8 @@ const Footer = () => {
                     </div>
                 </div>
                 {/* ---------------COPY RIGHT---------------- */}
-                <div className="footer-bottom text-center ms-lg-5">
-                    <span>
+                <div className="footer-bottom text-center">
+                    <span className="ms-lg-5">
                         <small className="text-white ms-lg-4">
                             &copy; PERFECT GYM {new Date().getFullYear()}
                         </small>
